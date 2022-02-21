@@ -1,6 +1,7 @@
 import '../styles/App.css';
 import React, { Component } from 'react';
 import BookContainer from './BookContainer';
+import Favorites from './Favorites';
 
 
 class App extends Component {
