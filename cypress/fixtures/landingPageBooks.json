@@ -1,0 +1,57 @@
+[
+ {
+        "id": 1,
+        "isbn": "9781250278210",
+        "title": "ABANDONED IN DEATH",
+        "description": "The 54th book of the In Death series. Eve Dallas investigates a homicide and the disappearance of other women who resemble that victim.",
+        "amazon_link": "https://www.amazon.com/dp/125027821X?tag=NYTBSREV-20",
+        "book_image": "https://storage.googleapis.com/du-prd/books/images/9781250278210.jpg",
+        "author": "J.D. Robb",
+        "created_at": "2022-02-21T19:53:08.350Z",
+        "updated_at": "2022-02-21T19:53:08.350Z"
+    },
+    {
+        "id": 2,
+        "isbn": "9780525559474",
+        "title": "THE MIDNIGHT LIBRARY",
+        "description": "Nora Seed finds a library beyond the edge of the universe that contains books with multiple possibilities of the lives one could have lived.",
+        "amazon_link": "https://www.amazon.com/dp/0525559477?tag=NYTBSREV-20",
+        "book_image": "https://storage.googleapis.com/du-prd/books/images/9780525559474.jpg",
+        "author": "Matt Haig",
+        "created_at": "2022-02-21T19:53:08.350Z",
+        "updated_at": "2022-02-21T19:53:08.350Z"
+    },
+    {
+        "id": 3,
+        "isbn": "9781501171345",
+        "title": "THE LAST THING HE TOLD ME",
+        "description": "Hannah Hall discovers truths about her missing husband and bonds with his daughter from a previous relationship.",
+        "amazon_link": "https://www.amazon.com/dp/1501171348?tag=NYTBSREV-20",
+        "book_image": "https://storage.googleapis.com/du-prd/books/images/9781501171345.jpg",
+        "author": "Laura Dave",
+        "created_at": "2022-02-21T19:53:08.350Z",
+        "updated_at": "2022-02-21T19:53:08.350Z"
+    },
+    {
+        "id": 4,
+        "isbn": "9780735222359",
+        "title": "THE LINCOLN HIGHWAY",
+        "description": "Two friends who escaped from a juvenile work farm take Emmett Watson on an unexpected journey to New York City in 1954.",
+        "amazon_link": "https://www.amazon.com/dp/0735222355?tag=NYTBSREV-20",
+        "book_image": "https://storage.googleapis.com/du-prd/books/images/9780735222359.jpg",
+        "author": "Amor Towles",
+        "created_at": "2022-02-21T19:53:08.350Z",
+        "updated_at": "2022-02-21T19:53:08.350Z"
+    },
+    {
+        "id": 5,
+        "isbn": "9780593356159",
+        "title": "THE MAID",
+        "description": "When a wealthy man is found dead in his room, a maid at the Regency Grand Hotel becomes a lead suspect.",
+        "amazon_link": "https://www.amazon.com/dp/0593356152?tag=NYTBSREV-20",
+        "book_image": "https://storage.googleapis.com/du-prd/books/images/9780593356159.jpg",
+        "author": "Nita Prose",
+        "created_at": "2022-02-21T19:53:08.350Z",
+        "updated_at": "2022-02-21T19:53:08.350Z"
+    }
+]
