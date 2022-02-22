@@ -6,7 +6,8 @@ const BookContainer = ({ allBooks }) => {
   const bookCards = allBooks.map((book) => {
     return (
       <BookCard 
-        key={book.isbn}
+        key={book.id}
+        id={book.id}
         title={book.title}
         bookImage={book.book_image}
         author={book.author}
