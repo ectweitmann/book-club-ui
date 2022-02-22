@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import BookContainer from './BookContainer';
 import Favorites from './Favorites';
 import BookDetails from './BookDetails';
+import { apiCalls } from '../apiCalls';
+import { cleanBookData } from '../utils';
 import { Route, Switch } from 'react-router-dom';
 
 
@@ -85,6 +87,14 @@ class App extends Component {
         }
       ]
     }
+  }
+
+  componentDidMount = () => {
+    apiCalls.getAllBooks()
+      .then(booksData => {
+        const cleanedBooksData = booksData.map(book => cleanBookData(book));
+        this.setState({ books: cleanBookData})
+      }) 
   }
 
   render() {
