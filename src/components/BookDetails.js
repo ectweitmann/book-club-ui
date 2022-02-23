@@ -13,12 +13,9 @@ class BookDetails extends Component {
   }
 
   componentDidMount = () => {
-    console.log(this.props.id);
     apiCalls.getSingleBook(this.props.id)
       .then(bookData => {
-        console.log(bookData);
         const cleanedBookData = cleanBookData(bookData[0]);
-        console.log(cleanedBookData);
         this.setState({ selectedBook: cleanedBookData });
       })
       .catch(error => this.setState({ error: error.message }))
