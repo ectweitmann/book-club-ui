@@ -45,14 +45,17 @@
 }
 
 .learn-more-btn {
-  width: inherit;
-  height: inherit;
+  width: 7.5em;
+  height: 2.25em;
   background: none;
   border-radius: 50px;
   border: 1px solid #938673;
   color: #938673;
   cursor: pointer;
-  margin-bottom: 2%;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0.4em 0 0 0;
 }
 
 .learn-more-btn:hover {
