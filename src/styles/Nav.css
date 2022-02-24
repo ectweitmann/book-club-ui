@@ -1,0 +1,11 @@
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30%;
+  width: 100%;
+}
+
+.page-title {
+  font-size: x-large;
+}

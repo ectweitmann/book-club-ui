@@ -1,12 +1,16 @@
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   overflow-y: hidden;
-  margin: 5% 5%;
+  overflow-x: hidden;
+  margin: 3% 3%;
   background: #FBF3EE;
   height: 80vh;
   border-radius: 50px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 3%;
 }

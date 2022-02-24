@@ -1,10 +1,61 @@
 .book-card {
   display: flex;
-  width: 23%;
-  height: 40%;
-  margin: 1%;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5%;
+}
+
+
+/* FlexBox */
+/* .book-card {
+  display: flex;
+  width: 25%;
+  height: 42%;
+  margin-bottom: 5%;
+} */
+
+.book-side-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 8%;
+  text-align: left;
+  width: 100%;
 }
 
 .book-cover {
   height: 100%;
+  box-shadow: 6px 9px 10px #595045,
+              12px 15px 10px #938673;
+
+}
+
+.book-title {
+  font-size: medium;
+  margin: 0;
+}
+
+.book-author {
+  font-size: small;
+}
+
+.learn-more-container {
+  width: 8em;
+  height: 2.5em;
+}
+
+.learn-more-btn {
+  width: inherit;
+  height: inherit;
+  background: none;
+  border-radius: 50px;
+  border: 1px solid #938673;
+  color: #938673;
+  cursor: pointer;
+  margin-bottom: 2%;
+}
+
+.learn-more-btn:hover {
+  background: #938673;
+  color: #FBF3EE;
 }
