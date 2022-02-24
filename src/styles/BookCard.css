@@ -1,0 +1,10 @@
+.book-card {
+  display: flex;
+  width: 23%;
+  height: 40%;
+  margin: 1%;
+}
+
+.book-cover {
+  height: 100%;
+}
