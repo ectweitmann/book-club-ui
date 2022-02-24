@@ -1,0 +1,8 @@
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 15px;
+  margin: 5%;
+  overflow-y: scroll;
+}
