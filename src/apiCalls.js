@@ -3,8 +3,8 @@ export const apiCalls = {
     return fetch('https://book-club-api-2110.herokuapp.com/api/v1/books')
       .then(response => response.json())
   },
-  getSingleBook(id) {
-    return fetch(`https://book-club-api-2110.herokuapp.com/api/v1/books/${id}`)
+  getSingleBook(isbn) {
+    return fetch(`https://book-club-api-2110.herokuapp.com/api/v1/books/${isbn}`)
       .then(response => response.json())
   },
   getAllFavorites() {
