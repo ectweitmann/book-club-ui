@@ -3,7 +3,7 @@
   grid-template-columns: repeat(auto-fit, minmax(150px, 30%));
   grid-auto-rows: minmax(190px, 320px);
   grid-row-gap: 12%;
-  grid-column-gap: 4.5%;
+  grid-column-gap: 4.9%;
   justify-content: center;
   overflow-y: scroll;
   height: 80%;

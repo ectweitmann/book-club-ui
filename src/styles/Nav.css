@@ -1,11 +1,18 @@
 .navbar {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   height: 30%;
   width: 100%;
 }
 
 .page-title {
-  font-size: x-large;
+  font-size: xxx-large;
+  margin: 0px;
+}
+
+.favorites-link {
+  text-decoration: none;
+  color: black;
+  font-size: xx-large;
 }

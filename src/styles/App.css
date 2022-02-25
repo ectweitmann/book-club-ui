@@ -13,4 +13,6 @@
   padding-left: 3%;
   padding-right: 3%;
   padding-bottom: 3%;
+  box-shadow: 8px 9px 1px #595045,
+              12px 15px 5px #938673;
 }
