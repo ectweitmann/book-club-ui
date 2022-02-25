@@ -38,8 +38,8 @@ class App extends Component {
         <Route exact path='/favorites' render={() => {
           return <Favorites />
         }} />
-        <Route exact path='/:id' render={({ match }) => {
-          return <BookDetails id={match.params.id} />
+        <Route exact path='/:isbn' render={({ match }) => {
+          return <BookDetails isbn={match.params.isbn} />
         }} />
        </Switch>
      </section>
