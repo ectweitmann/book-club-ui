@@ -1,0 +1,71 @@
+.book-details {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 5% 4.7% 5%;
+  height: 80%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.book-details-text-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.book-text-div {
+  text-align: left;
+}
+
+.selected-description,
+.selected-author {
+  font-size: x-large;
+}
+
+.selected-title {
+  font-size: xxx-large;
+  margin-top: 0;
+}
+
+.selected-cover {
+  box-shadow: 6px 9px 10px #595045, 12px 15px 10px #938673;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.favorite-button,
+.amazon-store-link {
+  width: 12em;
+  height: 5em;
+  background: none;
+  border-radius: 50px;
+  border: 1px solid #938673;
+  color: #938673;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.amazon-store-link {
+  padding: 1.7em 0 0 0;
+}
+
+.favorite-button {
+  margin-right: 8%;
+}
+
+.favorite-button:hover,
+.amazon-store-link:hover {
+  background: #938673;
+  color: #fbf3ee;
+}
