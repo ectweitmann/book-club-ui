@@ -25,9 +25,9 @@ export const apiCalls = {
       .then(response => response.json())
   }, 
   updateFavStatus(selectedBook) {
-    return fetch(`https://book-club-api-2110.herokuapp.com/api/v1/books/${selectedBook}`, {
+    return fetch(`https://book-club-api-2110.herokuapp.com/api/v1/books/${selectedBook.isbn}`, {
       method: 'PATCH',
-      body: JSON.stringify({isFavorited: !selectedBook.isFavorited}),
+      body: JSON.stringify({isFavorited: !(selectedBook.isFavorited === 'true')}),
       headers: {
         'Content-Type': 'application/json'
       }
