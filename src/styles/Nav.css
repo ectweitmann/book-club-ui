@@ -6,13 +6,19 @@
   width: 100%;
 }
 
-.page-title {
-  font-size: xxx-large;
-  margin: 0px;
-}
-
-.favorites-link {
+.favorites-link,
+.landing-page-link {
+  font-family: 'Yeseva One', cursive;
   text-decoration: none;
   color: black;
   font-size: xx-large;
+}
+
+.logo-link {
+  width: 20%;
+
+}
+
+.logo {
+  width: 100%;
 }

@@ -56,11 +56,27 @@
   box-sizing: border-box;
 }
 
+.unfavorite-button {
+  width: 12em;
+  height: 5em;
+  background: #938673;
+  border-radius: 50px;
+  border: none;
+  color: #fbf3ee;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
 .amazon-store-link {
   padding: 1.7em 0 0 0;
 }
 
-.favorite-button {
+.favorite-button,
+.unfavorite-button {
   margin-right: 8%;
 }
 
