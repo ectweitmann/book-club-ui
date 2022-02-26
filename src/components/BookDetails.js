@@ -49,11 +49,10 @@ class BookDetails extends Component {
   }
 
   determineButton = () => {
-    let favButton;
     if(this.state.selectedBook.isFavorited === 'true') {
-      return favButton = <button className="favorite-button" onClick={this.handleDelete}>Remove from Favorites</button>
+      return <button className="unfavorite-button" onClick={this.handleDelete}>Remove from Favorites</button>
     } else {
-      return favButton = <button className="favorite-button" onClick={this.handleAdd}>Add to Favorites</button>
+      return <button className="favorite-button" onClick={this.handleAdd}>Add to Favorites</button>
     }
   }
 
