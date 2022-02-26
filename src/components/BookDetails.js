@@ -28,7 +28,6 @@ class BookDetails extends Component {
       return apiCalls.getSingleBook(this.props.isbn)
         .then(data => {
           const cleanedBookData = cleanBookData(data[0])
-          console.log('delete from fav', cleanedBookData)
           this.setState({ selectedBook: cleanedBookData })
         })
     })
@@ -41,7 +40,6 @@ class BookDetails extends Component {
       return apiCalls.getSingleBook(this.props.isbn)
         .then(data => {
           const cleanedBookData = cleanBookData(data[0])
-          console.log('add to fav', cleanedBookData)
           this.setState({ selectedBook: cleanedBookData })
         })
     })
