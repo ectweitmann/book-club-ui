@@ -21,7 +21,25 @@ class BookDetails extends Component {
       .catch(error => this.setState({ error: error.message }))
   }
 
+  handleDelete = (event) => {
+    
+  }
+
+  handleAdd = (event) => {
+    
+  }
+
+  determineButton = () => {
+    let favButton;
+    if(this.state.selectedBook.isFavorited) {
+      favButton = <button className="favorite-button">Remove from Favorites</button>
+    } else {
+      favButton = <button className="favorite-button">Add to Favorites</button>
+    }
+  }
+
   render() {
+
     return (
         <section className="book-details">
           <img className="selected-cover" src={this.state.selectedBook.book_image}/>
