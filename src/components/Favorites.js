@@ -23,7 +23,10 @@ class Favorites extends Component {
 
   render() {
     return (
-      <BookContainer allBooks={this.state.favorites}/>
+      <>
+        {!this.state.favorites.length && <h2 className="empty-favorites-msg">You haven't added any favorites yet -- get to it!</h2>}
+        <BookContainer allBooks={this.state.favorites}/>
+      </>
     )
   }
 }
