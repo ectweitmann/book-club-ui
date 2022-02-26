@@ -11,14 +11,16 @@
   margin: 0px;
 }
 
-.favorites-link {
+.favorites-link,
+.landing-page-link {
   text-decoration: none;
   color: black;
   font-size: xx-large;
 }
 
-.landing-page-link {
+.logo-link {
   width: 20%;
+
 }
 
 .logo {
