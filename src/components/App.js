@@ -23,23 +23,23 @@ class App extends Component {
       .then(booksData => {
         const cleanedBooksData = booksData.map(book => cleanBookData(book));
         this.setState({ books: cleanedBooksData})
-      }) 
+      })
       .catch(error => this.setState({ error: error.message}))
   }
 
   render() {
     return (
      <section className='App'>
-       <Nav />
        <Switch>
         <Route exact path='/'>
+          <Nav />
           <BookContainer allBooks={this.state.books}/>
         </Route>
         <Route exact path='/favorites' render={() => {
-          return <Favorites />
+          return [<Nav location="favorites"/>, <Favorites />]
         }} />
         <Route exact path='/:isbn' render={({ match }) => {
-          return <BookDetails isbn={match.params.isbn} />
+          return [<Nav />, <BookDetails isbn={match.params.isbn} />]
         }} />
        </Switch>
      </section>
