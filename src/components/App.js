@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import BookContainer from './BookContainer';
 import Favorites from './Favorites';
 import BookDetails from './BookDetails';
+import Error404 from './Error404';
 import Nav from './Nav';
 import { apiCalls } from '../apiCalls';
 import { cleanBookData } from '../utils';
@@ -38,9 +39,13 @@ class App extends Component {
         <Route exact path='/favorites' render={() => {
           return [<Nav location="favorites"/>, <Favorites />]
         }} />
-        <Route exact path='/:isbn' render={({ match }) => {
+        <Route exact path='/:isbn/selectedBook' render={({ match }) => {
           return [<Nav />, <BookDetails isbn={match.params.isbn} />]
         }} />
+        <Route>
+          <Nav />
+          <Error404 />
+        </Route>
        </Switch>
      </section>
     )
