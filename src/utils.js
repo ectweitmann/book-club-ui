@@ -11,6 +11,17 @@ export const cleanBookData = (book) => {
     book_image: book['book_image'],
     author: book.author,
     isFavorited: book.isFavorited
-  } 
+  }   
+}
+
+export const trimBookData = (book) => {
+  return {
+    isbn: book.isbn,
+    title: book.title,
+    description: book.description,
+    amazon_link: book['amazon_link'],
+    book_image: book['book_image'],
+    author: book.author
+  }
 }
 

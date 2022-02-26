@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import { apiCalls } from "../apiCalls";
 import '../styles/BookDetails.css';
-import { cleanBookData } from "../utils";
+import { cleanBookData, trimBookData } from "../utils";
+
 
 class BookDetails extends Component {
   constructor(props) {
     super(props);
     this.state = {
       selectedBook: {},
-      error: ''
+      error: '',
     }
   }
 
@@ -16,12 +17,48 @@ class BookDetails extends Component {
     apiCalls.getSingleBook(this.props.isbn)
       .then(bookData => {
         const cleanedBookData = cleanBookData(bookData[0]);
-        this.setState({ selectedBook: cleanedBookData });
+        this.setState({ selectedBook: cleanedBookData});
       })
       .catch(error => this.setState({ error: error.message }))
   }
 
+  handleDelete = () => {
+    Promise.all([apiCalls.deleteFromFavorites(this.state.selectedBook.isbn), apiCalls.updateFavStatus(this.state.selectedBook)])
+    .then(() => {
+      return apiCalls.getSingleBook(this.props.isbn)
+        .then(data => {
+          const cleanedBookData = cleanBookData(data[0])
+          console.log('delete from fav', cleanedBookData)
+          this.setState({ selectedBook: cleanedBookData })
+        })
+    })
+    .catch(error => this.setState({ error: error.message }))
+  }
+
+  handleAdd = () => {
+    Promise.all([apiCalls.addToFavorites(trimBookData(this.state.selectedBook)), apiCalls.updateFavStatus(this.state.selectedBook)])
+    .then(() => {
+      return apiCalls.getSingleBook(this.props.isbn)
+        .then(data => {
+          const cleanedBookData = cleanBookData(data[0])
+          console.log('add to fav', cleanedBookData)
+          this.setState({ selectedBook: cleanedBookData })
+        })
+    })
+    .catch(error => this.setState({ error: error.message }))
+  }
+
+  determineButton = () => {
+    let favButton;
+    if(this.state.selectedBook.isFavorited === 'true') {
+      return favButton = <button className="favorite-button" onClick={this.handleDelete}>Remove from Favorites</button>
+    } else {
+      return favButton = <button className="favorite-button" onClick={this.handleAdd}>Add to Favorites</button>
+    }
+  }
+
   render() {
+
     return (
         <section className="book-details">
           <img className="selected-cover" src={this.state.selectedBook.book_image}/>
@@ -32,7 +69,7 @@ class BookDetails extends Component {
               <p className="selected-description">{this.state.selectedBook.description}</p>
             </div>
             <div className="button-container">
-              <button className="favorite-button">Add to Favorites</button>
+              {this.determineButton()}
               <a href={this.state.selectedBook.amazon_link} className="amazon-store-link" target="_blank" rel="noopener noreferrer">Buy Book</a>
             </div>
           </div>
