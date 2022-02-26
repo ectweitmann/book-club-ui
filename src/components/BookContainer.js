@@ -2,10 +2,10 @@ import React from "react";
 import '../styles/BookContainer.css';
 import BookCard from "./BookCard";
 
-const BookContainer = ({ allBooks }) => {   
+const BookContainer = ({ allBooks }) => {
   const bookCards = allBooks.map((book) => {
     return (
-      <BookCard 
+      <BookCard
         key={book.id}
         isbn={book.isbn}
         title={book.title}
