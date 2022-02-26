@@ -1,0 +1,20 @@
+[
+  {
+    "isbn": "9780525559474",
+    "title": "The Midnight Library",
+    "description": "Nora Seed finds a library beyond the edge of the universe that contains books with multiple possibilities of the lives one could have lived.",
+    "amazon_link": "https://www.amazon.com/dp/0525559477?tag=NYTBSREV-20",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9780525559474.jpg",
+    "author": "Matt Haig",
+    "isFavorited": "true"
+  },
+  {
+    "isbn": "9781250278210",
+    "title": "Abandoned in Death",
+    "description": "The 54th book of the In Death series. Eve Dallas investigates a homicide and the disappearance of other women who resemble that victim.",
+    "amazon_link": "https://www.amazon.com/dp/125027821X?tag=NYTBSREV-20",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9781250278210.jpg",
+    "author": "J.D. Robb",
+    "isFavorited": "true"
+  }
+]
