@@ -3,6 +3,7 @@ import ErrorModal from "./ErrorModal";
 import { apiCalls } from "../apiCalls";
 import '../styles/BookDetails.css';
 import { cleanBookData, trimBookData } from "../utils";
+import PropTypes from 'prop-types';
 
 
 class BookDetails extends Component {
@@ -78,3 +79,7 @@ class BookDetails extends Component {
 }
 
 export default BookDetails;
+
+BookDetails.propTypes = {
+  isbn: PropTypes.string
+}
