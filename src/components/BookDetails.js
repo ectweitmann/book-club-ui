@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ErrorModal from "./ErrorModal";
 import { apiCalls } from "../apiCalls";
 import '../styles/BookDetails.css';
 import { cleanBookData, trimBookData } from "../utils";
@@ -48,13 +49,14 @@ class BookDetails extends Component {
 
   determineButton = () => {
     if(this.state.selectedBook.isFavorited === 'true') {
-      return <button className="unfavorite-button" onClick={() => this.handleDelete}>Remove from Favorites</button>
+      return <button className="unfavorite-button" onClick={this.handleDelete}>Remove from Favorites</button>
     } else {
-      return <button className="favorite-button" onClick={() => this.handleAdd}>Add to Favorites</button>
+      return <button className="favorite-button" onClick={this.handleAdd}>Add to Favorites</button>
     }
   }
 
   render() {
+    const errorModal = this.state.error ? <ErrorModal message={this.state.error}/> : null
     return (
         <section className="book-details">
           <img className="selected-cover" src={this.state.selectedBook.book_image}/>
@@ -69,6 +71,7 @@ class BookDetails extends Component {
               <a href={this.state.selectedBook.amazon_link} className="amazon-store-link" target="_blank" rel="noopener noreferrer">Buy Book</a>
             </div>
           </div>
+          {errorModal}
         </section>
       )
   }

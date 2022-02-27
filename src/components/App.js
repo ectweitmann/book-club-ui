@@ -5,6 +5,7 @@ import Favorites from './Favorites';
 import BookDetails from './BookDetails';
 import Error404 from './Error404';
 import Nav from './Nav';
+import ErrorModal from './ErrorModal';
 import { apiCalls } from '../apiCalls';
 import { cleanBookData } from '../utils';
 import { Route, Switch } from 'react-router-dom';
@@ -29,6 +30,7 @@ class App extends Component {
   }
 
   render() {
+    const errorModal = this.state.error ? <ErrorModal message={this.state.error}/> : null
     return (
      <section className='App'>
        <Switch>
@@ -47,6 +49,7 @@ class App extends Component {
           <Error404 />
         </Route>
        </Switch>
+       {errorModal}
      </section>
     )
   }

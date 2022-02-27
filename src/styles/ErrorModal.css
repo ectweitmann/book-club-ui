@@ -1,0 +1,30 @@
+.error-modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-modal-box {
+  display: flex;
+  width: 40%;
+  height: 40%;
+  background-color: #f2e5cf;
+  text-align: center;
+  padding: 1em;
+  font-size: 20px;
+}
+
+.error-message {
+  display: flex;
+  align-items: center;
+  margin: 1em 1em 1.8em 1em;
+  color: #252522;
+}
