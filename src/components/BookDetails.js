@@ -55,7 +55,6 @@ class BookDetails extends Component {
   }
 
   render() {
-
     return (
         <section className="book-details">
           <img className="selected-cover" src={this.state.selectedBook.book_image}/>
