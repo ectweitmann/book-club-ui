@@ -7,6 +7,7 @@ const BookContainer = ({ allBooks }) => {
     return (
       <BookCard
         key={book.id}
+        id={book.id}
         isbn={book.isbn}
         title={book.title}
         bookImage={book.book_image}
