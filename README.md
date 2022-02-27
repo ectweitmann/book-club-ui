@@ -92,6 +92,12 @@ The React architecture is based on three class components (App.js, BookDetails.j
 
 Cypress was used for E2E and integration testing. To test the application: run `npm run cypress` and you will have a window open that gives you the ability to click on each test and see whether they pass. Make sure you've run `npm start` in a separate terminal tab before you begin the testing. 
 
+<img width="784" alt="Screen Shot 2022-02-27 at 4 13 13 PM" src="https://user-images.githubusercontent.com/78453792/155904096-2c56df5b-8948-45f3-9356-b3c2b466df18.png">
+
+Example of a successful test:
+
+![bc-test-gif](https://user-images.githubusercontent.com/78453792/155904117-943b901c-4006-473b-93d1-09a56a7eca94.gif)
+
 ## Project Challanges <a name="projectChallanges"></a>
 
 - This was our team's first time working with the following technology and concepts, which naturally came with a learning curve as we implemented them into our project:
