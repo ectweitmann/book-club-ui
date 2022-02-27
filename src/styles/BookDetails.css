@@ -85,3 +85,59 @@
   background: #938673;
   color: #fbf3ee;
 }
+
+.book-details::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 430px) {
+  .book-details {
+    flex-direction: column;
+    /* justify-content: space-between; */
+    height: inherit;
+    overflow-y: scroll;
+  }
+
+  .book-details-text-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .selected-cover {
+    width: 140px;
+    align-self: center;
+    margin-bottom: 10%;
+  }
+
+  .selected-description,
+  .selected-author {
+    font-size: small;
+  }
+
+  .selected-title {
+    font-size: x-large;
+  }
+
+  .button-container {
+    justify-content: space-around;
+  }
+
+  .favorite-button,
+  .unfavorite-button,
+  .amazon-store-link {
+    width: 10em;
+    height: 3em;
+    font-size: medium;
+  }
+
+  .amazon-store-link {
+    padding: 12px;
+  }
+
+  .favorite-button:hover,
+  .amazon-store-link:hover {
+    background: none;
+    color: #938673;
+    border: 1px solid #938673;
+  }
+}
