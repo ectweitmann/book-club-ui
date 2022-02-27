@@ -40,7 +40,7 @@ class App extends Component {
           return [<Nav location="favorites"/>, <Favorites />]
         }} />
         <Route exact path='/:isbn/selectedBook' render={({ match }) => {
-          return [<Nav />, <BookDetails isbn={match.params.isbn} />]
+          return [<Nav key={match.params.isbn + '-nav'} />, <BookDetails isbn={match.params.isbn} key={match.params.isbn + '-book-details'} />]
         }} />
         <Route>
           <Nav />
