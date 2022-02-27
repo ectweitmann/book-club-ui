@@ -104,14 +104,13 @@
   }
 
   .selected-cover {
-    width: 140px;
+    width: 160px;
     align-self: center;
-    margin-bottom: 10%;
   }
 
   .selected-description,
   .selected-author {
-    font-size: small;
+    font-size: small ;
   }
 
   .selected-title {
