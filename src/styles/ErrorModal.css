@@ -16,6 +16,7 @@
   display: flex;
   width: 40%;
   height: 40%;
+  border-radius: 50px;
   background-color: #f2e5cf;
   text-align: center;
   padding: 1em;
