@@ -1,6 +1,6 @@
 # 📚 Book Club 📚
 
-Welcome to Book Club--your new go-to app where you can find out all the details about the latest bestsellers! If you're a reading lover, you've come to the right place.
+Welcome to Book Club--your new go-to app where you can find out all the details about the latest bestsellers! If you're a book lover, you've come to the right place.
 
 Deployed Application here: [Book Club]()
 
@@ -11,10 +11,10 @@ Deployed Application here: [Book Club]()
 3. [Project Goals](#projectGoals)
 4. [Directions and Features](#directions)
 5. [Code Architecture](#codeArchitecture)
-6. [Project Challanges](#projectChallanges)
-7. [Project Wins](#projectWins)
-8. [Technologies Used](#techUsed)
-9. [Testing](#testing)
+6. [Technologies Used](#techUsed)
+7. [Testing](#testing)
+8. [Project Challanges](#projectChallanges)
+9. [Project Wins](#projectWins)
 10. [Future Iterations](#futureIterations)
 11. [Authors](#authors)
 
@@ -46,9 +46,16 @@ We created a backend for this project to satisfy the requirements of our Stretch
 - Learn how to deploy an API with a PostgresSQL database on Heroku
 - Gain an understanding of what is it like to create both the frontend and the backend of an application
 
+
+## Directions and Features <a name="directions"></a>
+
+Scroll through the main page to view all books in the database. Each books's cover, title and author are visible. 
+
+Click on the 'Learn More' button next to a book cover that interests you to view a book's details. On this page a description of the book's plot is presented. The user is also given the ability to add to or remove a book from their favorites as well as the option to buy the book on Amazon. They can view all of their favorited books by clicking the "Your favorites" button at the top right of the page. Click the book club logo at the top left of the page to return to the main page.
+
 ## Code Architecture <a name="codeArchitecture"></a>
 
-The React architecture is based on three class components (App.js, BookDetails.js, Favorites.js) and four functional components (Nav.js, Error404.js, BookContainer.js, BookCard.js). The class components hold state and are in charge of the network requests, while the functional components render information passed down as props.
+The React architecture is based on three class components (App.js, BookDetails.js, Favorites.js) and five functional components (Nav.js, Error404.js, BookContainer.js, BookCard.js, ErrorModal.js). The class components hold state and are in charge of the network requests, while the functional components render information passed down as props.
 
 ## Technologies Used <a name="techUsed"></a>
 
@@ -80,8 +87,6 @@ The React architecture is based on three class components (App.js, BookDetails.j
 - Postman
 - NPM
 - esLint
-
-## Directions and Features <a name="directions"></a>
 
 ## Testing <a name="testing"></a>
 
