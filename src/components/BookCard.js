@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/BookCard.css';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const BookCard = ({title, author, bookImage, isbn, id }) => {
     return (
@@ -18,3 +19,11 @@ const BookCard = ({title, author, bookImage, isbn, id }) => {
 }
 
 export default BookCard;
+
+BookCard.propTypes = {
+  title: PropTypes.string,
+  author: PropTypes.string, 
+  bookImage: PropTypes.string,
+  isbn: PropTypes.string, 
+  id: PropTypes.number
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/ErrorModal.css';
+import PropTypes from 'prop-types';
 
 const ErrorModal = (props) => {
   return (
@@ -11,4 +12,8 @@ const ErrorModal = (props) => {
   )
 }
 
-export default ErrorModal
+export default ErrorModal;
+
+ErrorModal.propTypes = {
+  message: PropTypes.string
+}

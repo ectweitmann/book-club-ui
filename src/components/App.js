@@ -38,8 +38,8 @@ class App extends Component {
           <Nav />
           <BookContainer allBooks={this.state.books}/>
         </Route>
-        <Route exact path='/favorites' render={() => {
-          return [<Nav location="favorites"/>, <Favorites />]
+        <Route exact path='/favorites' render={({ match }) => {
+          return [<Nav location="favorites" key={match + '-nav'}/>, <Favorites key={match + '-book-details'}/>]
         }} />
         <Route exact path='/:isbn/selectedBook' render={({ match }) => {
           return [<Nav key={match.params.isbn + '-nav'} />, <BookDetails isbn={match.params.isbn} key={match.params.isbn + '-book-details'} />]
