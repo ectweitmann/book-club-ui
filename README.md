@@ -20,7 +20,7 @@ Deployed Application here: [Book Club]()
 
 ## Overview <a name="overview"></a>
 
-Book Club is a Mod 3 project at the Turing School of Software and Design that was built with `create-react-app` and tested using Cypress. React, React Router and data pulled from a backend server we created were utilized to display a dashboard of books. The user can select a single book by clicking on the 'Learn More' to get more information about it. Additionally, the user will find Book Club to be a responsively designed application that they may use on many different screens.
+Book Club is a Mod 3 project at the Turing School of Software and Design that was built with `create-react-app` and tested using Cypress. React, React Router and data pulled from a backend server we created were utilized to display a dashboard of books. The user can select a single book by clicking on the 'Learn More' button to get more information about it. Additionally, the user will find Book Club to be a responsively designed application that they may use on many different screens.
 
 We created a backend for this project to satisfy the requirements of our Stretch Tech Project. We were given an 8 day timeframe to learn and implement new technologies such as Express, Node, PostgresSQL, Knex to build a backend server and database. 
 
@@ -85,7 +85,7 @@ The React architecture is based on three class components (App.js, BookDetails.j
 - Knex.js
 - JavaScript
 - Node.js
-- Node-Fetch
+- Node Fetch
 - PgAdmin4
 - Heroku
 - Postman
@@ -104,7 +104,7 @@ Example of a successful test:
 
 ## Project Challanges <a name="projectChallanges"></a>
 
-- This was our team's first time working with the following technology and concepts, which naturally came with a learning curve as we implemented them into our project:
+- This was our team's first time working with the following technologies and concepts, which naturally came with a learning curve as we implemented them into our project:
 
     - Connecting Express server to PostgresSQL database using Knex
     - Deploying app using Heroku Postgres
