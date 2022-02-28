@@ -15,7 +15,8 @@
 }
 
 .logo-link {
-  width: 20%;
+  width: 40%;
+  max-width: 250px;
 
 }
 
@@ -23,7 +24,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 744px) {
   .navbar {
     display: flex;
     flex-direction: column;
@@ -35,6 +36,7 @@
 
   .logo-link {
     width: 65%;
+    max-width: 200px;
   }
 
   .favorites-link,

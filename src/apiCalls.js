@@ -25,7 +25,7 @@ export const apiCalls = {
   deleteFromFavorites(isbn) {
     return fetch(`https://book-club-api-2110.herokuapp.com/api/v1/favorites/${isbn}`, { method: 'DELETE' })
       .then(response => handleResponse(response))
-  }, 
+  },
   updateFavStatus(selectedBook) {
     return fetch(`https://book-club-api-2110.herokuapp.com/api/v1/books/${selectedBook.isbn}`, {
       method: 'PATCH',

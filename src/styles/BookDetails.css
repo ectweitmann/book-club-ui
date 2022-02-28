@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   padding: 0 5% 4.7% 5%;
-  height: 80%;
+  height: 50%;
   width: 100%;
   box-sizing: border-box;
 }
@@ -19,6 +19,10 @@
   text-align: left;
 }
 
+.selected-author {
+  margin-top: 0;
+}
+
 .selected-description,
 .selected-author {
   font-size: x-large;
@@ -30,6 +34,7 @@
 }
 
 .selected-cover {
+  align-self: baseline;
   box-shadow: 6px 9px 10px #595045, 12px 15px 10px #938673;
 }
 
@@ -90,10 +95,9 @@
   display: none;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 1023px) {
   .book-details {
     flex-direction: column;
-    /* justify-content: space-between; */
     height: inherit;
     overflow-y: scroll;
   }
@@ -104,7 +108,9 @@
   }
 
   .selected-cover {
-    width: 160px;
+    width: 100px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     align-self: center;
   }
 
@@ -138,5 +144,35 @@
     background: none;
     color: #938673;
     border: 1px solid #938673;
+  }
+}
+
+@media screen and (min-width: 330px) and (max-width: 500px) {
+  .selected-cover {
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1023px) {
+  .selected-cover {
+    width: 150px;
+    justify-content: space-between;
+    align-self: center;
+  }
+
+  .selected-description,
+  .selected-author {
+    font-size: medium;
+  }
+
+  .selected-title {
+    font-size: xx-large;
+    margin: 0;
+  }
+
+  .button-container {
+    justify-content: space-around;
+    width: 50%;
+    align-self: center;
   }
 }
