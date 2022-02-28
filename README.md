@@ -2,7 +2,7 @@
 
 Welcome to Book Club--your new go-to app where you can find out all the details about the latest bestsellers! If you're a book lover, you've come to the right place.
 
-Deployed Application here: [Book Club]()
+Deployed Application here: [Book Club](https://book-club-ui.herokuapp.com/)
 
 # Table of Contents
 
