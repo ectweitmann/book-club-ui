@@ -51,11 +51,11 @@ We created a backend for this project to satisfy the requirements of our Stretch
 
 Scroll through the main page to view all books in the database. Each books's cover, title and author are visible. 
 
-![main_page_view](https://user-images.githubusercontent.com/78453792/155918520-c1846799-827c-43e9-b065-4af7ac195bba.gif)
+![main_page_view](https://media.giphy.com/media/7Q9UX06Z6FbB40wdEP/giphy.gif)
 
 Click on the 'Learn More' button next to a book cover that interests you to view a book's details. On this page a description of the book's plot is presented. The user is also given the ability to add to or remove a book from their favorites as well as the option to buy the book on Amazon. They can view all of their favorited books by clicking the "Your favorites" button at the top right of the page. Click the book club logo at the top left of the page to return to the main page.
 
-![favorite-unfavorite-book](https://user-images.githubusercontent.com/78453792/155918541-cd8937aa-fd8b-4e5a-8bc6-f25934ecfdd0.gif)
+![favorite-unfavorite-book](https://media.giphy.com/media/m2txGQ1Ikbi4EJ9k5L/giphy.gif)
 
 ## Code Architecture <a name="codeArchitecture"></a>
 
