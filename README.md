@@ -74,9 +74,7 @@ The React architecture is based on three class components (App.js, BookDetails.j
 - PropTypes
 - NPM
 - Cypress
-- animate.css
 - title-case
-- esLint 
 
 ### Backend Technologies
 
@@ -90,7 +88,6 @@ The React architecture is based on three class components (App.js, BookDetails.j
 - Heroku
 - Postman
 - NPM
-- esLint
 
 ## Testing <a name="testing"></a>
 
