@@ -42,8 +42,8 @@ We created a backend for this project to satisfy the requirements of our Stretch
 
 - Continue to gain competency with React fundamentals, Router and Cypress testing
 - Practice building a server in Express 
-- Successful populate a PostgresSQL database using Knex query builder
-- Learn how to deploy an API with a PostgresSQL database on Heroku
+- Successful populate a PostgreSQL database using Knex query builder
+- Learn how to deploy an API with a PostgreSQL database on Heroku
 - Gain an understanding of what is it like to create both the frontend and the backend of an application
 
 
@@ -81,7 +81,7 @@ The React architecture is based on three class components (App.js, BookDetails.j
 ### Backend Technologies
 
 - Express
-- PostgresSQL
+- PostgreSQL
 - Knex.js
 - JavaScript
 - Node.js
@@ -109,13 +109,13 @@ Example of a successful test:
     - Connecting Express server to PostgresSQL database using Knex
     - Deploying app using Heroku Postgres
 
-This project was a really "stretch" for our group--we had never worked with PostgresSQL or Knex before so it was a huge challenge learning how to connect our server to the database using Knex. We came in without any knowledge of mySQL and had difficulities with the complexities of the Knex documentation. Most of our challanges came from using the Knex query builder due to our inexperience with the backend. We also ran into trouble when trying to deploy to Heroku Postgres due to not being very familar with process.ENV and environments in general.  
+This project was a really "stretch" for our group--we had never worked with PostgreSQL or Knex before so it was a huge challenge learning how to connect our server to the database using Knex. We came in without any knowledge of mySQL and had difficulities with the complexities of the Knex documentation. Most of our challanges came from using the Knex query builder due to our inexperience with the backend. We also ran into trouble when trying to deploy to Heroku Postgres due to not being very familar with process.ENV and environments in general.  
 
 ## Project Wins <a name="projectWins"></a>
 
 - Created a fully funtional MVP with time scope of 8 days
 - Continued to build a strong understanding of React framework 
-- Successfully built an API with database by self-teaching Express, PostgresSQL and Knex. 
+- Successfully built an API with database by self-teaching Express, PostgreSQL and Knex. 
 - Completed a thorough project plan and wireframe, which kept our team on track 
 - Implemented React Router for a multi-page UX
 - Continued to gain competency with Cypress E2E testing framework
