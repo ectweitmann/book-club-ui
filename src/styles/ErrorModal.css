@@ -14,6 +14,9 @@
 
 .error-modal-box {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 40%;
   height: 40%;
   border-radius: 50px;
@@ -24,8 +27,16 @@
 }
 
 .error-message {
-  display: flex;
   align-items: center;
-  margin: 1em 1em 1.8em 1em;
+  text-align: center;
   color: #252522;
+  margin: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .error-modal-box {
+    width: 70%;
+    height: 25%;
+    border-radius: 50px;
+  }
 }

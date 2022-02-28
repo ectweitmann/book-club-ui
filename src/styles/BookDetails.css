@@ -1,6 +1,6 @@
 .book-details {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 0 5% 4.7% 5%;
   height: 80%;
   width: 100%;
@@ -12,11 +12,15 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .book-text-div {
   text-align: left;
+}
+
+.selected-author {
+  margin-top: 0;
 }
 
 .selected-description,
@@ -30,6 +34,9 @@
 }
 
 .selected-cover {
+  align-self: center;
+  width: 300px;
+  height: 450px;
   box-shadow: 6px 9px 10px #595045, 12px 15px 10px #938673;
 }
 
@@ -84,4 +91,92 @@
 .amazon-store-link:hover {
   background: #938673;
   color: #fbf3ee;
+}
+
+.book-details::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .book-details {
+    justify-content: space-around;
+    flex-direction: column;
+    height: inherit;
+    overflow-y: scroll;
+  }
+
+  .book-details-text-container {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .selected-cover {
+    width: 100px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    align-self: center;
+  }
+
+  .selected-description,
+  .selected-author {
+    font-size: small ;
+  }
+
+  .selected-title {
+    font-size: x-large;
+  }
+
+  .button-container {
+    justify-content: space-around;
+  }
+
+  .favorite-button,
+  .unfavorite-button,
+  .amazon-store-link {
+    width: 10em;
+    height: 3em;
+    font-size: medium;
+  }
+
+  .amazon-store-link {
+    padding: 12px;
+  }
+
+  .favorite-button:hover,
+  .amazon-store-link:hover {
+    background: none;
+    color: #938673;
+    border: 1px solid #938673;
+  }
+}
+
+@media screen and (min-width: 330px) and (max-width: 500px) {
+  .selected-cover {
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1023px) {
+  .selected-cover {
+    width: 270px;
+    justify-content: space-between;
+    align-self: center;
+  }
+
+  .selected-description,
+  .selected-author {
+    font-size: medium;
+  }
+
+  .selected-title {
+    font-size: xx-large;
+    margin: 0;
+  }
+
+  .button-container {
+    justify-content: space-around;
+    width: 75%;
+    align-self: center;
+  }
 }

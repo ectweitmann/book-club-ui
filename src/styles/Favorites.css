@@ -1,3 +1,10 @@
 .empty-favorites-msg {
   font-size: xx-large;
+  height: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .empty-favorites-msg {
+    font-size: x-large;
+  }
 }

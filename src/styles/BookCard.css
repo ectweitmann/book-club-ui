@@ -62,3 +62,13 @@
   background: #938673;
   color: #FBF3EE;
 }
+
+@media screen and (max-width: 320px) {
+  .book-title {
+    font-size: medium;
+  }
+
+  .book-author {
+    font-size: x-small;
+  }
+}

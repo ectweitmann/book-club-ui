@@ -15,10 +15,33 @@
 }
 
 .logo-link {
-  width: 20%;
+  width: 40%;
+  max-width: 250px;
 
 }
 
 .logo {
   width: 100%;
+}
+
+@media screen and (max-width: 744px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+  }
+
+  .logo-link {
+    width: 65%;
+    max-width: 200px;
+  }
+
+  .favorites-link,
+  .landing-page-link {
+    font-size: 100%;
+    align-self: flex-end;
+  }
 }
